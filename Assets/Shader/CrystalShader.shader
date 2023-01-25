@@ -36,9 +36,8 @@ Shader "Unlit/CrystalShader"
 
             // I am the Fragment Shader Stage
             fixed4 frag (v2f i) : SV_Target {
-                // sample the texture
-                fixed4 col = _CrystalColor;
 
+                fixed4 col = _CrystalColor;
                 return col;
             }
             ENDCG
